@@ -1,5 +1,7 @@
 #! /usr/bin/Rscript
 
+install.packages("ChannelAttribution",repos = "http://cran.us.r-project.org")
+
 # Read in libraries
 if (!require(ChannelAttribution)){
 install.packages("ChannelAttribution")
@@ -15,9 +17,9 @@ df <- read.csv('Paths.csv')
 df <- df[c(1,2)]
 
 #Run Markov Model
-M <- markov_model(df, 'Path', var_value = 'Conversion', var_conv = 'Conversion', sep = '>', order = 1, out_more = TRUE)
+M <- markov_model(df, 'Path', var_value = 'Conversion', var_conv = 'Conversion', sep = '>', order=1, out_more = TRUE)
 
-write.csv(M$result, file = "Markov - Output.csv", row_names = FALSE)
+write.csv(M$result, file = "Markov - Output.csv", row.names = FALSE)
 
 # Output transition matrix as well
-write.csv(M$transition_matrix, file = "Markov - Output - Transition Matrix.csv", row_names = FALSE)
+write.csv(M$transition_matrix, file = "Markov - Output - Transition Matrix.csv", row.names = FALSE)

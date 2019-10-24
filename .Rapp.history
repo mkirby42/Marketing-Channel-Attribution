@@ -1,0 +1,90 @@
+options(prompt="R> ")
+1 + 1
+getwd()
+install.packages("ks")
+update.packages()
+r
+mean?
+dewfw
+?mean
+??"mean"
+q90
+\q()
+q()
+14/6
+log(x=243,base=3)
+exp(x=3)
+(29.50556 * 3^(4.2-3.62)-42)/6
+sqrt(x=(25.2+15+16.44+15.3+18.6)/5)
+log(x=.3,base=exp)
+log(x=.3)
+-1.203973^exp
+options(prompt = "R> ")]
+options(prompt="R> ")
+x <- -5
+x
+x = x + 1
+x
+mynumber = 45.2
+y <- mynumber*x
+y
+ls()
+Bajoran = 3^2 * 4^(1/8)
+bajoran
+Bajoran = (3^2 * 4^(1/8))
+Bajoran
+Bajoran = (Bajoran/2.33)
+Bajoran
+Wormhole = ((-8.2)*10^(-13))
+Wormhole
+Bajoran * Wormhole
+myvec <- c(1,3,1,32)
+myvec
+foo <- 32.1
+myvec2 <- c(3,-3,2,3.45,1e+03,64^0.5,2+(3-1.1)/9.44,foo)
+myvec2
+myvec3 <- c(myvec,myvec2)
+myvec3
+values <- c(4447, 1246, 325, 1305, 1422, 265, 154, 747, 1166, 270, 598 3974, 447, 6212, 7520, 12201, 3764, 2964, 37082, 14246, 22836, 8, 1409, 417, 185, 445, 352, 46, 306, 123, 61, 30, 48, 234, 189, 68, 20, 144, 2270)
+values <- c(4447,1246,325,1305,1422,265,154,747,1166,270,598,3974,447,6212,7520,12201,3764,2964,37082,14246,22836,8,1409,417,185,445,352,46,306,123,61,30,48,234,189,68,20,144,2270)
+weights <- values / sum(values)
+weights
+packageVersion("channelattribution")
+install.packages("channelattribution")
+packageVersion("ChannelAttribution")
+install.packages("ChannelAttribution")
+if (!require(ChannelAttribution)){#
+install.packages("ChannelAttribution")#
+library(ChannelAtrribution)#
+}
+setwd <- setwd('/Users/mattkirby/repos/Marketing-Channel-Attribution')
+df <- read.csv('Paths.csv')
+df
+df <- df[c(1,2,3)]
+df.head()
+df
+M <- markov_model(Data = df,#
+                  var_path = 'Path',#
+                  var_conv = 'Conversion',#
+                  var_value = 'Conversion_value',      #
+                  sep = '>',#
+                  order = 1,#
+                  out_more = TRUE)
+write.csv(M$result, file = "Markov - Output.csv", row.names = FALSE)
+write.csv(M$transition_matrix, file = "Markov - Output - Transition Matrix.csv", row.names = FALSE)
+M$result
+M <- markov_model(Data = df,#
+                  var_path = 'Path',#
+                  var_conv = 'Conversion',#
+                  var_value = 'Conversion_value',      #
+                  sep = '>',#
+                  order = 2,#
+                  out_more = TRUE)
+M$result
+M <- markov_model(Data = df,#
+                  var_path = 'Path',#
+                  var_conv = 'Conversion',    #
+                  sep = '>',#
+                  order = 2,#
+                  out_more = TRUE)
+M$result
